@@ -36,3 +36,19 @@
     transform: rotate(360deg);
   }
 }
+a{
+  background-color: red;
+  color: white;
+  padding: 1rem;
+  text-decoration: none;
+  margin: 2rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid red;
+}
+a:hover{
+  background-color: yellow;
+  color: black;
+  border: 1px solid black;
+}
