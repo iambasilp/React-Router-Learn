@@ -1,10 +1,12 @@
 
 import './App.css';
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter, Routes, Route} from 'react-router-dom';
 import { Home } from './Pages/Home';
 import { Settings } from './Pages/Settings';
 import { Users } from './Pages/Users';
 import { Usage } from './Pages/Usage';
+import { Details } from './Pages/Details';
+import Header from './components/Header';
 
 
 function App() {
@@ -12,10 +14,7 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App">
-        <Link to="Home">Home</Link>
-        <Link to="Settings">Settings</Link>
-        <Link to="Users">Users</Link>
-        <Link to="Usage">Usage</Link>
+        <Header/>
       </div>
       <Routes>
         <Route path='/' element={<Home />}></Route>
@@ -23,6 +22,8 @@ function App() {
         <Route path='Settings' element={<Settings />} />
         <Route path='Users' element={<Users />} />
         <Route path='Usage' element={<Usage />} />
+        <Route path='Details' element={<Details />} />
+        <Route path='Details/:userId' element={<Details />} />
       </Routes>
     </BrowserRouter>
 
