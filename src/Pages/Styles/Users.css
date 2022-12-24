@@ -1,0 +1,39 @@
+.users{
+    
+    display: grid;
+}
+.card{
+    background-color: rgb(31, 59, 216);
+    margin: 1rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    transition: all ease 0.3s;
+}
+.users select{
+    background-color: rgb(31, 59, 216);
+    border: none;
+    outline: none;
+    color: white;
+    margin: 1rem 0rem 0rem 1rem;
+    padding:.5rem 1rem;
+    display: inline-block;
+}
+.users select option{
+    background-color: grey;
+    font-size: 1rem;
+}
+.card:hover{
+    background-color: rgb(10, 28, 129);
+}
+.name{
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+.age{
+    color: whitesmoke;
+}

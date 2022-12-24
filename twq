@@ -1,0 +1,38 @@
+[1mdiff --git a/src/Pages/Details.jsx b/src/Pages/Details.jsx[m
+[1mindex 4506018..aac7c3f 100644[m
+[1m--- a/src/Pages/Details.jsx[m
+[1m+++ b/src/Pages/Details.jsx[m
+[36m@@ -7,15 +7,15 @@[m [mexport const Details = () => {[m
+ [m
+ const location = useLocation()[m
+ const state = location.state[m
+[31m-const navigate = useNavigate();[m
+[31m-const { userId } = useParams();[m
+ const [user, setUser] = useState(state.data);[m
+[31m-   [m
+[32m+[m
+[32m+[m[32mconst navigate = useNavigate();[m
+[32m+[m[32m const { userId } = useParams();[m[41m  [m
+   useEffect(() => {[m
+     if(!user){[m
+[31m-            axios("/data.json").then((response) => {[m
+[31m-      const data = response.data.find((item) => item.id === parseInt(userId));[m
+[31m-      setUser(data);[m
+[32m+[m[32m        axios("/data.json").then((response) => {[m
+[32m+[m[32m      const item = response.data.find((item) => item.id === parseInt(userId));[m
+[32m+[m[32m      setUser(item);[m
+     });[m
+     }[m
+ [m
+[1mdiff --git a/src/Pages/Users.jsx b/src/Pages/Users.jsx[m
+[1mindex 36aa18b..229dfd4 100644[m
+[1m--- a/src/Pages/Users.jsx[m
+[1m+++ b/src/Pages/Users.jsx[m
+[36m@@ -5,6 +5,7 @@[m [mimport { Link, useSearchParams, useNavigate } from 'react-router-dom'[m
+ export const Users = () => {[m
+     const [user,setUser] = useState([])[m
+     useEffect(()=>{[m
+[32m+[m[41m      [m
+         axios('/data.json')[m
+         .then((response)=>{[m
+             setUser(response.data)[m

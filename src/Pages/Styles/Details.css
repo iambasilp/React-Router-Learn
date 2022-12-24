@@ -1,0 +1,63 @@
+.details{
+    
+    display: grid;
+    
+}
+.details_card{
+    background-color: rgb(216, 31, 31);
+    margin: 1rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    transition: all ease 0.3s;
+}
+.details_card:hover{
+    background-color: rgb(10, 28, 129);
+}
+
+.details_roll{
+    font-size: 2rem;
+    background-color: whitesmoke;
+    padding: .3rem .5rem;
+    box-shadow: 2px 3px 2px #aaa;
+    margin-bottom: 1.5rem;
+}
+.details_name{
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+.details_description{
+    text-align: left;
+    max-width: 400px;
+    color: white;
+}
+.details_age{
+    padding: .2rem .4rem;
+   background-color: white;
+   box-shadow: 2px 3px 2px #aaa;
+}
+.details_gender{
+    padding: .2rem .4rem;
+    background-color: white;
+    box-shadow: 2px 3px 2px #aaa;
+}
+.info_box{
+    padding:.2rem .2rem .2rem 0rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   column-gap:.5rem;
+}
+
+.back{
+    margin: 1rem 0rem 0rem 1rem;
+}
+.ri-arrow-left-fill:before {
+    font-size: 2.5rem;
+    border-radius: 50%;
+}

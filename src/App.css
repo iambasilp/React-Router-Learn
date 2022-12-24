@@ -1,6 +1,4 @@
-.App {
-  text-align: center;
-}
+
 
 .App-logo {
   height: 40vmin;
@@ -35,4 +33,10 @@
   to {
     transform: rotate(360deg);
   }
+}
+a{
+  text-decoration: none;
+}
+ul{
+  list-style: none;
 }
