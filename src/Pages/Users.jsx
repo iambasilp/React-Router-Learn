@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link, useSearchParams } from "react-router-dom";
+import { Link, useSearchParams, useNavigate } from "react-router-dom";
 import axios from "axios";
 import "./Users.css";
 export const Users = () => {
@@ -12,12 +12,14 @@ export const Users = () => {
       setData(response.data);
     });
   }, []);
+  const navigate = useNavigate()
   function handleSelectChange(event){
     setSearchParams({
       class:event.target.value,
       CreatedBy:"Basil"
     })
   }
+
   return (
     <div>
       <div className="options">
@@ -42,10 +44,17 @@ export const Users = () => {
         return cls == item.class
       }).map((item) => {
         return (
-          <div key={item.id} className="users">
+          <div onClick={()=>{
+            navigate(`/Details/${item.id}`,{
+              replace:true,
+              state:{
+                data:item,
+              }
+            })
+          }} key={item.id} className="users">
             <div className="user_item">
               <div className="user_name">
-                <Link to={`/Details/${item.id}`}>{item.name}</Link>
+               {item.name}
               </div>
               <div className="user_sex">{item.gender}</div>
               <div className="user_class"> Class {item.class}</div>
