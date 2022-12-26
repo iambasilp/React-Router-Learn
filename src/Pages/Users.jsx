@@ -46,7 +46,7 @@ export const Users = () => {
         return (
           <div onClick={()=>{
             navigate(`/Details/${item.id}`,{
-              replace:true,
+              replace:false,
               state:{
                 data:item,
               }

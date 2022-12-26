@@ -1,22 +1,22 @@
 .header{
     width: 100%;
     padding: 2rem 2rem;
-    background-color: skyblue;
+    background-color: rgb(196, 190, 190);
 }
 .nav{
     display: flex;
     justify-content: flex-start;
 
 }
-a{
+.header a{
     color: black;
-    font-weight: bold;
+    font-weight: 500;
+    padding-left: 1rem;
+    font-size: 1.1rem;
     text-decoration: none;
     
 }
-a.active{
-    background-color: white;
-    padding: .5rem 1rem;
-    color: black;
+.header a.active{
+    color: #000080;
     border-radius: 2rem;
 }

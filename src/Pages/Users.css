@@ -19,12 +19,16 @@
     font-size:1.5rem;
 }
 .user_sex{
-    color: blue;
+    color: #000080;
     font-weight: 500;
 }
 .options{
-    background-color: blue;
+    background-color: #000080;
     padding: 2rem 0rem 1rem 2rem;
     color: white;
 
+}
+select{
+    padding: .5rem 1.2rem;
+    font-size: 1rem;
 }

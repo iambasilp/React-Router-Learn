@@ -8,6 +8,8 @@ import { Usage } from './Pages/Usage';
 import { Details } from './Pages/Details';
 import Header from './components/Header';
 import { Notfound } from './Pages/Notfound';
+import { Marks } from './Pages/Marks';
+import { Sports } from './Pages/Sports'
 
 
 function App() {
@@ -18,15 +20,17 @@ function App() {
         <Header />
       </div>
       <Routes>
-        <Route path='*' element={<Notfound />}></Route>
         <Route path='/' element={<Home />}></Route>
         <Route path='Home' element={<Home />} />
         <Route path='Settings' element={<Settings />} />
         <Route path='Users' element={<Users />} />
         <Route path='Usage' element={<Usage />} />
         <Route path='Details' element={<Details />} />
-        <Route path='Details/:userId' element={<Details />} />
-
+        <Route path='Details/:userId' element={<Details />}>
+          <Route index element={<Marks />}></Route>
+          <Route path="Sports" element={<Sports />}></Route>
+        </Route>
+        <Route path='*' element={<Notfound />}></Route>
       </Routes>
     </BrowserRouter>
 
