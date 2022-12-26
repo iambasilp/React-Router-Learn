@@ -9,14 +9,27 @@
 
 }
 .header a{
+    display: inlin-block;
     color: black;
+    text-align: center;
     font-weight: 500;
-    padding-left: 1rem;
+    margin-left: 1rem;
     font-size: 1.1rem;
     text-decoration: none;
-    
+    position: relative;
 }
 .header a.active{
     color: #000080;
-    border-radius: 2rem;
+}
+.header a.active::before{
+    content: "";
+    position: absolute;
+    bottom: -.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0 auto;
+    width: 90%;
+    border-radius: 30px;
+    height: 2px;
+    background-color:#000080;
 }

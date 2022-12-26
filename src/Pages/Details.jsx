@@ -34,14 +34,16 @@ export const Details = () => {
         <h1>{user.gender}</h1>
         <h1>{user.physics}</h1>
       </div>
+
       <button 
       className="backbutton"
         onClick={() => {
-          navigate('/Users');
+          navigate('..');
         }}
       >
         Back
       </button>
+      
       <div className="sub-menu">
         <NavLink className="menu" to="" end>
           Marks

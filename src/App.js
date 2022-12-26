@@ -16,21 +16,23 @@ function App() {
 
   return (
     <BrowserRouter>
-      <div className="App">
-        <Header />
-      </div>
       <Routes>
-        <Route path='/' element={<Home />}></Route>
-        <Route path='Home' element={<Home />} />
-        <Route path='Settings' element={<Settings />} />
-        <Route path='Users' element={<Users />} />
-        <Route path='Usage' element={<Usage />} />
-        <Route path='Details' element={<Details />} />
-        <Route path='Details/:userId' element={<Details />}>
-          <Route index element={<Marks />}></Route>
-          <Route path="Sports" element={<Sports />}></Route>
+        <Route path='/' element={<Header />}>
+          <Route index element={<Home />}></Route>
+          <Route path='Home' element={<Home />} />
+          <Route path='Settings' element={<Settings />} />
+          <Route path='Users'>
+            <Route index element={<Users />} />
+            <Route path=':userId' element={<Details />}>
+              <Route index element={<Marks />}></Route>
+              <Route path="Sports" element={<Sports />}></Route>
+            </Route>
+          </Route>
+          <Route path='Usage' element={<Usage />} />
+          <Route path='Details' element={<Details />} />
+          <Route path='*' element={<Notfound />}></Route>
         </Route>
-        <Route path='*' element={<Notfound />}></Route>
+
       </Routes>
     </BrowserRouter>
 

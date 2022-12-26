@@ -4,15 +4,16 @@
   column-gap: 1rem;
 }
 .sub-menu .menu{
+    position:relative;
     margin: 1rem 1rem 0rem 1rem;
     padding: .5rem 1rem;
     text-transform: capitalize;
     color: white;
     background-color: red ;
-    transition: all ease 0.3s ;
-    border: none;
+    border-bottom: 10px solid #EEEEEE;
     outline: none;
 }
+
 .sub-menu .active{
     background-color: #000;
 }
@@ -25,6 +26,22 @@
     background-color: red;
     color: white;
     font-size: 1.2rem;
+}
+.sub-menu .menu.active::before,
+.sub-menu .menu.active::after{
+    content: "";
+    position: absolute;
+    top: 3rem;
+    width: 35px;
+    height: 3px;
+    background-color: #000;
+    transform: rotate(90deg);
+}
+.sub-menu .menu.active::before{
+    left: 0;
+}
+.sub-menu .menu.active::after{
+    right: 0;
 }
 .backbutton:active{
     background-color: black;

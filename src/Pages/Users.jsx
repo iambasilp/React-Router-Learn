@@ -45,7 +45,7 @@ export const Users = () => {
       }).map((item) => {
         return (
           <div onClick={()=>{
-            navigate(`/Details/${item.id}`,{
+            navigate(`${item.id}`,{
               replace:false,
               state:{
                 data:item,
@@ -59,7 +59,7 @@ export const Users = () => {
               <div className="user_sex">{item.gender}</div>
               <div className="user_class"> Class {item.class}</div>
             </div>
-          </div>
+          </div>  
         );
       })}
     </div>
