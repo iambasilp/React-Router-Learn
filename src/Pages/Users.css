@@ -8,6 +8,10 @@
     border: 2px solid grey;
     padding: 1rem;
     margin:1rem;
+    transition: all ease 0.1s;
+}
+.user_item:hover{
+    background-color:rgb(204, 203, 203);
 }
 .user_name{
     text-transform: capitalize;
