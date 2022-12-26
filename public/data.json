@@ -3,56 +3,99 @@
     "id": "1",
     "name": "arun",
     "gender": "Male",
-    "physics": 88,
-    "maths": 87,
-    "english": 78,
-    "class" : 5
+    "class" : 5,
+    "Marks":{
+            "Maths":42,
+            "English":34,
+            "Science":46
+        },
+        "Sports":{
+            "Football":6,
+            "Cricket":9,
+            "Volleyball":3
+        }
   },
   {
     "id": "2",
     "name": "rajesh",
     "gender": "Male",
-    "physics": 96,
-    "maths": 100,
-    "english": 95,
-    "class" : 6
+    "class" : 6,
+    "Marks":{
+            "Maths":42,
+            "English":34,
+            "Science":46
+        },
+        "Sports":{
+            "Football":6,
+            "Cricket":9,
+            "Volleyball":3
+        }
   },
+  
   {
     "id": "3",
     "name": "moorthy",
     "gender": "Male",
-    "physics": 89,
-    "maths": 90,
-    "english": 70,
-    "class" : 7
+    "class" : 7,
+    "Marks":{
+            "Maths":42,
+            "English":34,
+            "Science":46
+        },
+        "Sports":{
+            "Football":6,
+            "Cricket":9,
+            "Volleyball":3
+        }
   },
   {
     "id": "4",
     "name": "raja",
     "gender": "Male",
-    "physics": 30,
-    "maths": 25,
-    "english": 40,
-    "class" : 8
+    "class" : 8,
+    "Marks":{
+            "Maths":42,
+            "English":34,
+            "Science":46
+        },
+        "Sports":{
+            "Football":6,
+            "Cricket":9,
+            "Volleyball":3
+        }
     
   },
   {
     "id": "5",
     "name": "basil",
     "gender": "Male",
-    "physics": 34,
-    "maths": 25,
-    "english": 20,
-    "class" : 9
+    "class" : 9,
+    "Marks":{
+            "Maths":42,
+            "English":4,
+            "Science":46
+        },
+        "Sports":{
+            "Football":2,
+            "Cricket":2,
+            "Volleyball":3
+        }
   },
   {
     "id": "6",
     "name": "Anas",
     "gender": "Male",
-    "physics": 20,
-    "maths": 35,
-    "english": 60,
-    "class" : 10
+    "class" : 50,
+    "Marks":{
+            "Maths":32,
+            "English":44,
+            "Science":26
+        },
+        "Sports":{
+            "Football":4,
+            "Cricket":7,
+            "Volleyball":3
+        }
   }
 ]
 
