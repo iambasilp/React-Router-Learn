@@ -1,0 +1,101 @@
+[
+  {
+    "id": "1",
+    "name": "arun",
+    "gender": "Male",
+    "class" : 5,
+    "Marks":{
+            "Maths":12,
+            "English":34,
+            "Science":36
+        },
+        "Sports":{
+            "Football":24,
+            "Cricket":9,
+            "Volleyball":36
+        }
+  },
+  {
+    "id": "2",
+    "name": "rajesh",
+    "gender": "Male",
+    "class" : 6,
+    "Marks":{
+            "Maths":42,
+            "English":34,
+            "Science":26
+        },
+        "Sports":{
+            "Football":6,
+            "Cricket":29,
+            "Volleyball":13
+        }
+  },
+  
+  {
+    "id": "3",
+    "name": "moorthy",
+    "gender": "Male",
+    "class" : 7,
+    "Marks":{
+            "Maths":42,
+            "English":34,
+            "Science":26
+        },
+        "Sports":{
+            "Football":16,
+            "Cricket":49,
+            "Volleyball":37
+        }
+  },
+  {
+    "id": "4",
+    "name": "raja",
+    "gender": "Male",
+    "class" : 8,
+    "Marks":{
+            "Maths":41,
+            "English":14,
+            "Science":46
+        },
+        "Sports":{
+            "Football":28,
+            "Cricket":39,
+            "Volleyball":34
+        }
+    
+  },
+  {
+    "id": "5",
+    "name": "basil",
+    "gender": "Male",
+    "class" : 9,
+    "Marks":{
+            "Maths":42,
+            "English":42,
+            "Science":40
+        },
+        "Sports":{
+            "Football":21,
+            "Cricket":23,
+            "Volleyball":31
+        }
+  },
+  {
+    "id": "6",
+    "name": "Anas",
+    "gender": "Male",
+    "class" : 50,
+    "Marks":{
+            "Maths":32,
+            "English":44,
+            "Science":26
+        },
+        "Sports":{
+            "Football":4,
+            "Cricket":7,
+            "Volleyball":3
+        }
+  }
+]
+
