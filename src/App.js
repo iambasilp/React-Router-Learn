@@ -15,7 +15,7 @@ import { Sports } from './Pages/Sports'
 function App() {
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename='React-Router-Learn'>
       <Routes>
         <Route path='/' element={<Header />}>
           <Route index element={<Home />}></Route>

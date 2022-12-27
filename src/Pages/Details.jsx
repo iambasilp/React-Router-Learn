@@ -17,7 +17,7 @@ export const Details = () => {
   const navigate = useNavigate();
   useEffect(() => {
     if (!user) {
-      axios("/data.json").then((response) => {
+      axios("/React-Router-Learn/data.json").then((response) => {
         const item = response.data.find((e) => e.id == parseInt(userId));
         setUser(item);
       });
@@ -38,7 +38,7 @@ export const Details = () => {
       <button 
       className="backbutton"
         onClick={() => {
-          navigate('..');
+          navigate('/Users');
         }}
       >
         Back
