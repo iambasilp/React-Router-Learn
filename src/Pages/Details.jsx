@@ -1,6 +1,12 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import { useParams, useNavigate, useLocation } from "react-router-dom";
+import {
+  useParams,
+  useNavigate,
+  useLocation,
+  NavLink,
+  Outlet,
+} from "react-router-dom";
 import "remixicon/fonts/remixicon.css";
 import "./Styles/Details.css";
 export const Details = () => {
@@ -8,17 +14,23 @@ export const Details = () => {
   const location = useLocation();
   const state = location.state || {};
   const [user, setUser] = useState(state.data);
+  console.log(user);
   const navigate = useNavigate();
 
   useEffect(() => {
     if (!user) {
       axios("/data.json").then((response) => {
-        const item = response.data.find((item) => item.id == userId);
+        const item = response.data.find((e) => {
+          return e.id === parseInt(userId);
+        });
         setUser(item);
       });
     }
   }, [userId, user]);
-  console.log(user);
+  if (!user) {
+    return null;
+  }
+  console.log("Useer details", user);
   return (
     <div className="details">
       <div
@@ -39,12 +51,23 @@ export const Details = () => {
         </svg>
       </div>
       <div className="details_card">
-        <span className="details_roll">00{user.id}</span>
+        <span className="details_roll">{user.id}</span>
         <span className="details_name">{user.name}</span>
         <p className="details_description">{user.description}</p>
         <div className="info_box">
           <div className="details_age">Age: {user.age}</div>
           <div className="details_gender">{user.gender}</div>
+        </div>
+        <div className="extra-detail">
+          <NavLink className="extra-button" to="Marks" end>
+            Marks
+          </NavLink>
+          <NavLink className="extra-button" to="Sports">
+            Sports
+          </NavLink>
+        </div>
+        <div className="details-body">
+          <Outlet context={user}/>
         </div>
       </div>
     </div>

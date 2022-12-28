@@ -61,3 +61,24 @@
     font-size: 2.5rem;
     border-radius: 50%;
 }
+.extra-button{
+    display: inline-block;
+    margin-block:1rem;
+    background-color: rgb(245, 212, 25);
+    color: black;
+    box-shadow:-6px 6px 10px rgba(0,0,0,0.6);
+    padding: .5rem 1rem;
+    border: none;
+    outline: none;
+}
+.extra-button:hover{
+    background-color:rgb(230,230,230);
+}
+.extra-button:first-child{
+    margin-right: 1rem;
+}
+.details-body{
+    width: 100%;
+    padding: .5rem .3rem;
+    background-color: white;
+}

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 import './Styles/Users.css'
-import { Link, useSearchParams, useNavigate } from 'react-router-dom'
+import {useSearchParams, useNavigate } from 'react-router-dom'
 export const Users = () => {
     const [user,setUser] = useState([])
     useEffect(()=>{
@@ -12,7 +12,6 @@ export const Users = () => {
     },[])
     const navigate = useNavigate()
    const [searchParams,setSearchParams] = useSearchParams()
-   console.log(useSearchParams);
    const ID = searchParams.get('id')
    function handleChangeOption(event){
     const value = event.target.value;
@@ -35,11 +34,11 @@ export const Users = () => {
             </select>
         </div>
         {
-            user.filter((item)=>{
+            user.filter((mean)=>{
                 if(!ID){
                     return true
                 }
-                return ID == item.id
+                return ID === mean.id
             }).map((item)=>{
                 return (
                   <div key={item.name} className="card" onClick={
@@ -47,7 +46,7 @@ export const Users = () => {
                         navigate(`/Details/${item.id}`,{
                             replace:false,
                             state:{
-                                data:item,
+                                data:item
                             }
                         })
                     }
