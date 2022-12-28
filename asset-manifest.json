@@ -1,15 +1,20 @@
 {
   "files": {
-    "main.css": "/React-Router-Learn/static/css/main.f78a7dc7.css",
-    "main.js": "/React-Router-Learn/static/js/main.66ad8d92.js",
-    "static/js/787.8fedd6c6.chunk.js": "/React-Router-Learn/static/js/787.8fedd6c6.chunk.js",
-    "index.html": "/React-Router-Learn/index.html",
-    "main.f78a7dc7.css.map": "/React-Router-Learn/static/css/main.f78a7dc7.css.map",
-    "main.66ad8d92.js.map": "/React-Router-Learn/static/js/main.66ad8d92.js.map",
-    "787.8fedd6c6.chunk.js.map": "/React-Router-Learn/static/js/787.8fedd6c6.chunk.js.map"
+    "main.css": "/static/css/main.a5d60c6f.css",
+    "main.js": "/static/js/main.8c8f600d.js",
+    "static/js/787.8fedd6c6.chunk.js": "/static/js/787.8fedd6c6.chunk.js",
+    "static/media/remixicon.svg?t=1590207869815": "/static/media/remixicon.9cedd2150922ead84869.svg",
+    "static/media/remixicon.eot?t=1590207869815": "/static/media/remixicon.5cb99e6cba5a4619063f.eot",
+    "static/media/remixicon.ttf?t=1590207869815": "/static/media/remixicon.f2616f597cf98f38d234.ttf",
+    "static/media/remixicon.woff?t=1590207869815": "/static/media/remixicon.8d09fa11700ed63cf96e.woff",
+    "static/media/remixicon.woff2?t=1590207869815": "/static/media/remixicon.90668f6f9b3c2c18a090.woff2",
+    "index.html": "/index.html",
+    "main.a5d60c6f.css.map": "/static/css/main.a5d60c6f.css.map",
+    "main.8c8f600d.js.map": "/static/js/main.8c8f600d.js.map",
+    "787.8fedd6c6.chunk.js.map": "/static/js/787.8fedd6c6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f78a7dc7.css",
-    "static/js/main.66ad8d92.js"
+    "static/css/main.a5d60c6f.css",
+    "static/js/main.8c8f600d.js"
   ]
 }
