@@ -1,10 +1,10 @@
 .details{
-    
+    margin-top: 85px;
     display: grid;
-    
 }
 .details_card{
-    max-width: 467px;
+    max-width: 380px;
+    margin-top: 2rem;
     background-color: rgb(216, 31, 31);
     margin: 1rem;
     padding: 2rem 1rem;
@@ -17,7 +17,6 @@
     border-radius:1rem;
 }
 .details_card:hover{
-    transform: translate(10px,-3px);
     background-color: rgb(10, 28, 129);
 }
 
@@ -27,6 +26,7 @@
     padding: .3rem .5rem;
     box-shadow: 2px 3px 2px #aaa;
     margin-bottom: 1.5rem;
+    border-radius: 1rem;
 }
 .details_name{
     color: white;
@@ -89,4 +89,8 @@
 }
 .details-body{
    position: relative;
+}
+.back-icon{
+    width: 3rem;
+    height: 3rem;
 }

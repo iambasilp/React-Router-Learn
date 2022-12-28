@@ -1,20 +1,25 @@
 .header{
+    position: absolute;
+    width: 100%;
     background-color:white;
     padding:.5rem 4rem;
+    border-bottom: .3px solid #E50914;
 }
 .nav{
+    height: 3.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 .nav__logo{
-    color: black;
+    color: #E50914;
     font-size: 2.5rem;
     text-transform: uppercase;
     font-weight: 600;
     letter-spacing: .3px;
     
 }
+
 .nav__Link{
     margin-left: 3rem;
     font-size: 1.1rem;
@@ -22,6 +27,27 @@
     color: black;
 }
 .active{
-    color:  rgb(10, 28, 129);
+    color:  #E50914;
     border-bottom: .2rem solid black;
+}
+@media screen and (max-width:567px) {
+    .nav__logo{
+        font-size: 2rem;
+    }
+    .header{
+        
+        padding: .5rem 1rem;
+    }
+    .nav{
+
+    }
+    .nav__item{
+        display: flex;
+    }
+    .nav__Link{
+        margin-left:1rem;
+    }
+    .active{
+        border-bottom: .1rem solid black;
+    }
 }
