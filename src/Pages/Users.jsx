@@ -19,6 +19,7 @@ export const Users = () => {
         id:value
     })
    }
+   console.log("SearchParams", ID);
   return (
     <div className='users'>
         
@@ -43,7 +44,7 @@ export const Users = () => {
                 return (
                   <div key={item.name} className="card" onClick={
                     ()=>{
-                        navigate(`/Details/${item.id}`,{
+                        navigate(`${item.id}`,{
                             replace:false,
                             state:{
                                 data:item

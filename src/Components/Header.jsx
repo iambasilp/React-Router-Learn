@@ -1,8 +1,9 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+import { NavLink, Outlet } from 'react-router-dom'
 import './Header.css'
 const Header = () => {
   return (
+    <>
     <header className="header">
         <nav className="nav container">
             <span to="/Home" className="nav__logo">Basil.</span>
@@ -19,6 +20,8 @@ const Header = () => {
             </div>
         </nav>
     </header>
+    <Outlet />
+    </>
   )
 }
 export default Header

@@ -4,16 +4,20 @@
     
 }
 .details_card{
+    max-width: 467px;
     background-color: rgb(216, 31, 31);
     margin: 1rem;
-    padding: 1rem;
+    padding: 2rem 1rem;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
     transition: all ease 0.3s;
+    box-shadow: 10px 10px 15px rgb(134, 133, 133);
+    border-radius:1rem;
 }
 .details_card:hover{
+    transform: translate(10px,-3px);
     background-color: rgb(10, 28, 129);
 }
 
@@ -61,24 +65,28 @@
     font-size: 2.5rem;
     border-radius: 50%;
 }
+.extra-details a:not(.active){
+    border-top: 1px solid rgb(245, 212, 25);
+    border-right: 1px solid rgb(245, 212, 25);
+    border-left: 1px solid rgb(245, 212, 25)
+}
+.extra-details .active{
+  background-color: rgb(245, 212, 25);
+  color: black;
+}
 .extra-button{
     display: inline-block;
-    margin-block:1rem;
-    background-color: rgb(245, 212, 25);
-    color: black;
-    box-shadow:-6px 6px 10px rgba(0,0,0,0.6);
+    margin-block-start:2rem;
+    background-color: #000;
+    color: white;
     padding: .5rem 1rem;
     border: none;
     outline: none;
 }
-.extra-button:hover{
-    background-color:rgb(230,230,230);
-}
+
 .extra-button:first-child{
     margin-right: 1rem;
 }
 .details-body{
-    width: 100%;
-    padding: .5rem .3rem;
-    background-color: white;
+   position: relative;
 }

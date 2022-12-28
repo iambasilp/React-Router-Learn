@@ -36,7 +36,7 @@ export const Details = () => {
       <div
         className="back"
         onClick={() => {
-          navigate("/Users");
+          navigate("..");
         }}
       >
         <svg
@@ -51,15 +51,15 @@ export const Details = () => {
         </svg>
       </div>
       <div className="details_card">
-        <span className="details_roll">{user.id}</span>
+        <span className="details_roll">00{user.id}</span>
         <span className="details_name">{user.name}</span>
         <p className="details_description">{user.description}</p>
         <div className="info_box">
           <div className="details_age">Age: {user.age}</div>
           <div className="details_gender">{user.gender}</div>
         </div>
-        <div className="extra-detail">
-          <NavLink className="extra-button" to="Marks" end>
+        <div className="extra-details">
+          <NavLink className="extra-button" to="" end>
             Marks
           </NavLink>
           <NavLink className="extra-button" to="Sports">
@@ -67,7 +67,7 @@ export const Details = () => {
           </NavLink>
         </div>
         <div className="details-body">
-          <Outlet context={user}/>
+          <Outlet context={user} />
         </div>
       </div>
     </div>
