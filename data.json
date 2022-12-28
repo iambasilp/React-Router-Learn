@@ -1,104 +1,101 @@
 [
-    {
-        "name":"Basil",
-        "id":1,
-        "age":20,
-        "gender":"male",
-        "Marks":{
+  {
+    "id": "1",
+    "name": "arun",
+    "gender": "Male",
+    "class" : 5,
+    "Marks":{
+            "Maths":12,
+            "English":34,
+            "Science":36
+        },
+        "Sports":{
+            "Football":24,
+            "Cricket":9,
+            "Volleyball":36
+        }
+  },
+  {
+    "id": "2",
+    "name": "rajesh",
+    "gender": "Male",
+    "class" : 6,
+    "Marks":{
             "Maths":42,
             "English":34,
-            "Science":46
+            "Science":26
         },
         "Sports":{
             "Football":6,
-            "Cricket":9,
-            "Volleyball":3
-        },
-        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque consequat tortor at tincidunt varius. Interdum et malesuada fames ac ante ipsum primis in faucibus."
-    },
-    {
-        "name":"Safna",
-        "id":2,
-        "age":20,
-        "gender":"female",
-        "Marks":{
-            "Maths":48,
-            "English":44,
-            "Science":49
-        },
-        "Sports":{
-            "Football":2,
-            "Cricket":2,
-            "Volleyball":3
-        },
-        "description":"Ut at velit accumsan, ullamcorper est nec, dapibus magna. Mauris vestibulum neque ac neque dignissim, vitae congue enim commodo."
-    },
-    {
-        "name":"Marshoona",
-        "id":3,
-        "age":21,
-        "gender":"female",
-        "Marks":{
-            "Maths":49,
-            "English":49,
-            "Science":49
+            "Cricket":29,
+            "Volleyball":13
+        }
+  },
+  
+  {
+    "id": "3",
+    "name": "moorthy",
+    "gender": "Male",
+    "class" : 7,
+    "Marks":{
+            "Maths":42,
+            "English":34,
+            "Science":26
         },
         "Sports":{
-            "Football":3,
-            "Cricket":6,
-            "Volleyball":7
-        },
-        "description":"Nam eget ligula euismod, lacinia velit a, commodo sem. Donec vitae pretium dui. Donec pretium eget nisl id mattis. Suspendisse fermentum mauris mauris,"
-    },
-    {
-        "name":"Anas",
-        "id":4,
-        "age":22,
-        "gender":"male",
-        "Marks":{
-            "Maths":45,
-            "English":35,
+            "Football":16,
+            "Cricket":49,
+            "Volleyball":37
+        }
+  },
+  {
+    "id": "4",
+    "name": "raja",
+    "gender": "Male",
+    "class" : 8,
+    "Marks":{
+            "Maths":41,
+            "English":14,
             "Science":46
         },
         "Sports":{
-            "Football":8,
-            "Cricket":5,
-            "Volleyball":7
-        },
-        "description":" condimentum lectus ornare vel. Quisque vitae diam sit amet justo porttitor ultrices id sit amet sem. Morbi id mi justo. "
-    },
-    {
-        "name":"Ayas",
-        "id":5,
-        "age":28,
-        "gender":"male",
-        "Marks":{
-            "Maths":49,
-            "English":39,
-            "Science":47
-        },
-        "Sports":{
-            "Football":2,
-            "Cricket":10,
-            "Volleyball":6
-        },
-        "description":"Pellentesque auctor quis lectus faucibus sollicitudin. Suspendisse venenatis id enim vitae blandit. Mauris egestas neque ante."
-    },
-    {
-        "name":"Suhaib",
-        "id":6,
-        "age":20,
-        "gender":"male",
-        "Marks":{
-            "Maths":28,
-            "English":32,
-            "Science":33
+            "Football":28,
+            "Cricket":39,
+            "Volleyball":34
+        }
+    
+  },
+  {
+    "id": "5",
+    "name": "basil",
+    "gender": "Male",
+    "class" : 9,
+    "Marks":{
+            "Maths":42,
+            "English":42,
+            "Science":40
         },
         "Sports":{
-            "Football":2,
-            "Cricket":2,
-            "Volleyball":1
+            "Football":21,
+            "Cricket":23,
+            "Volleyball":31
+        }
+  },
+  {
+    "id": "6",
+    "name": "Anas",
+    "gender": "Male",
+    "class" : 50,
+    "Marks":{
+            "Maths":32,
+            "English":44,
+            "Science":26
         },
-        "description":"Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam ultricies tellus ac felis bibendum mattis. Curabitur in faucibus sem, sit amet dignissim tortor."
-    }
+        "Sports":{
+            "Football":4,
+            "Cricket":7,
+            "Volleyball":3
+        }
+  }
 ]
+
