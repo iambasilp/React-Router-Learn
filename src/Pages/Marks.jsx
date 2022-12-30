@@ -5,7 +5,7 @@ export const Marks = () => {
   const { Marks, name } = useOutletContext();
   console.log(Marks,name);
   return (
-    <>
+    <div className="wrapper">
       <div className="box">
         <div className="table">
           <div className="table-header">
@@ -64,6 +64,6 @@ export const Marks = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };

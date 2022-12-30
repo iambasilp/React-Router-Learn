@@ -1,5 +1,7 @@
 import React from "react";
 import { NavLink, Outlet } from "react-router-dom";
+import LogedInOutlet from './Outlets/LogedInOutlet';
+import {clearUserInfo} from '../utils/Common'
 import "./Header.css";
 const Header = () => {
   return (
@@ -19,10 +21,13 @@ const Header = () => {
             <NavLink to="Settings">Settings</NavLink>
             <NavLink to="Users">Users</NavLink>
             <NavLink to="Usage">Usage</NavLink>
+    
+              <NavLink  className='logout' to="Login" onClick={()=> clearUserInfo() }>Logout</NavLink>
           </div>
         </nav>
       </header>
-      <Outlet/>
+      
+      <LogedInOutlet />
     </>
   );
 };

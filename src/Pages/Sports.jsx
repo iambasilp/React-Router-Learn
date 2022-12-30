@@ -4,7 +4,7 @@ export const Sports = () => {
   const { Sports, name } = useOutletContext();
 
   return (
-    <>
+    <div className="wrapper">
       <div className="box">
         <div className="table">
           <div className="table-header">
@@ -96,6 +96,6 @@ export const Sports = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };

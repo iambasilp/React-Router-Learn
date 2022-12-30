@@ -1,7 +1,11 @@
-import React from 'react'
+import React from "react";
 
 export const Usage = () => {
   return (
-    <div>Usage</div>
-  )
-}
+    <div className="wrapper">
+      
+        <h1 style={{textAlign:"center",marginTop:"7rem"}}>Usage</h1>
+      
+    </div>
+  );
+};

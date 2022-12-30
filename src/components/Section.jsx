@@ -4,7 +4,7 @@ const Section = () => {
     console.log(testObj);
   return (
     <div>
-      <h1>This is section</h1>
+      <h1 style={{backgroundColor:"blue",color:"white",padding:"3rem", marginBottom:"2rem", textTransform:"capitalize"}}>This is Dynamically Imported Section </h1>
     </div>
   )
 }

@@ -28,22 +28,28 @@ export const Details = () => {
   }
 
   return (
-    <div>
-      <div style={{ backgroundColor: "#000080",color:"white", padding: "1rem 2rem" }}>
-        <h1  style={{textTransform:"capitalize"}}>{user.name}</h1>
+    <div className="wrapper">
+      <div
+        style={{
+          backgroundColor: "#000080",
+          color: "white",
+          padding: "1rem 2rem",
+        }}
+      >
+        <h1 style={{ textTransform: "capitalize" }}>{user.name}</h1>
         <h1>{user.gender}</h1>
         <h1>{user.physics}</h1>
       </div>
 
-      <button 
-      className="backbutton"
+      <button
+        className="backbutton"
         onClick={() => {
-          navigate('/Users');
+          navigate("/Users");
         }}
       >
         Back
       </button>
-      
+
       <div className="sub-menu">
         <NavLink className="menu" to="" end>
           Marks
@@ -53,7 +59,7 @@ export const Details = () => {
         </NavLink>
       </div>
       <div className="detail-body">
-        <Outlet context={user}/>
+        <Outlet context={user} />
       </div>
     </div>
   );

@@ -27,22 +27,3 @@
     color: white;
     font-size: 1.2rem;
 }
-.sub-menu .menu.active::before,
-.sub-menu .menu.active::after{
-    content: "";
-    position: absolute;
-    top: 3rem;
-    width: 35px;
-    height: 3px;
-    background-color: #000;
-    transform: rotate(90deg);
-}
-.sub-menu .menu.active::before{
-    left: 0;
-}
-.sub-menu .menu.active::after{
-    right: 0;
-}
-.backbutton:active{
-    background-color: black;
-}

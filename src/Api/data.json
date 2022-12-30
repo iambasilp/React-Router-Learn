@@ -1,0 +1,14 @@
+{
+  "basil": {
+    "role": ["admin", "user"],
+    "password":121212
+  },
+  "anas": {
+    "role": ["user"],
+    "password":121212
+  },
+  "suhaib": {
+    "role": ["user"],
+    "password":121212
+  }
+}

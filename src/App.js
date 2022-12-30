@@ -10,6 +10,7 @@ import { Notfound } from './Pages/Notfound';
 import { Marks } from './Pages/Marks';
 import { Sports } from './Pages/Sports'
 import './App.css';
+import Login from './Pages/Login';
 
 
 const MyUsers = React.lazy(() =>
@@ -19,8 +20,9 @@ const MyUsers = React.lazy(() =>
 function App() {
   return (
     <BrowserRouter basename='React-Router-Learn'>
-      <Suspense fallback={<div><h1>Loading ...</h1></div>}>
+      <Suspense fallback={<div style={{backgroundColor:"black"}}><h1>Loading ...</h1></div>}>
         <Routes>
+        <Route path='Login' element={<Login/>}></Route>
           <Route path='/' element={<Header />}>
             <Route index element={<Home />}></Route>
             <Route path='Home' element={<Home />} />

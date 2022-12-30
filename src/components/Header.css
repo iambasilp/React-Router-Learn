@@ -1,9 +1,13 @@
 .header{
+    position:absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     padding: 2rem 2rem;
     background-color: rgb(196, 190, 190);
 }
 .nav{
+    position: relative;
     display: flex;
     justify-content: flex-start;
 
@@ -32,4 +36,7 @@
     border-radius: 30px;
     height: 2px;
     background-color:#000080;
+}
+.nav__menu .logout{
+    color:  red !important;
 }

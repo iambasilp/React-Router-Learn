@@ -8,7 +8,7 @@ export const Settings = () => {
   const [state,setState] = useState(false)
   
   return (
-    <div>
+    <div style={{textAlign:"center",marginTop:"7rem"}} className="wrapper">
       {
        state && (
         <Suspense fallback={<div>Loading ....</div>}>
@@ -16,7 +16,7 @@ export const Settings = () => {
         </Suspense>
        )
       }
-      <button onClick={() => {
+      <button style={{padding:"1rem 2rem",fontFamily:"sans-serif",fontSize:"1rem", background:"#000080",color:"white",letterSpacing:"1.5px",border:"none",outline:"none"}} onClick={() => {
         setState(true)
       }}>Click here</button>
     </div>
