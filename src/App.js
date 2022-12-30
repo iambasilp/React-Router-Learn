@@ -1,6 +1,6 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Suspense } from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Home } from './Pages/Home';
 import { Settings } from './Pages/Settings';
 import { Usage } from './Pages/Usage';
@@ -11,7 +11,10 @@ import { Marks } from './Pages/Marks';
 import { Sports } from './Pages/Sports'
 import './App.css';
 
-const MyUsers = React.lazy(() => import('./Pages/Users'))
+
+const MyUsers = React.lazy(() =>
+  import('./Pages/Users').then(module => ({ default: module.Users }))
+);
 
 function App() {
   return (
