@@ -1,13 +1,15 @@
 
-import React from "react";
+import React, { useState } from "react";
 export const Settings = () => {
-
+  const [module,setModule]  = useState({})
+  const Comp = module.default || React.Fragment
   return (
     <div>
+      <Comp/>
       <button onClick={() => {
-        import('../utils/Common')
+        import('../components/Section')
           .then((response)=>{
-            console.log(response.testFun());
+            setModule(response)
           })
       }}>Click here</button>
     </div>
