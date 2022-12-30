@@ -1,16 +1,23 @@
 
 import React, { useState } from "react";
+import { Suspense } from "react";
+const MyComponent = React.lazy(()=>{
+  return import(/* webpackChunkName:"Section"*/'../components/Section')
+})
 export const Settings = () => {
-  const [module,setModule]  = useState({})
-  const Comp = module.default || React.Fragment
+  const [state,setState] = useState(false)
+  
   return (
     <div>
-      <Comp/>
+      {
+       state && (
+        <Suspense fallback={<div>Loading ....</div>}>
+            <MyComponent />
+        </Suspense>
+       )
+      }
       <button onClick={() => {
-        import('../components/Section')
-          .then((response)=>{
-            setModule(response)
-          })
+        setState(true)
       }}>Click here</button>
     </div>
   );
