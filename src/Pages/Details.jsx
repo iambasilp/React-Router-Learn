@@ -28,7 +28,7 @@ export const Details = () => {
   }
 
   return (
-    <div className="wrapper">
+    <div style={{marginTop:"5rem"}}>
       <div
         style={{
           backgroundColor: "#000080",
@@ -56,6 +56,9 @@ export const Details = () => {
         </NavLink>
         <NavLink className="menu" to="Sports">
           Sports
+        </NavLink>
+        <NavLink className="menu" to="Remarks">
+          Remarks
         </NavLink>
       </div>
       <div className="detail-body">

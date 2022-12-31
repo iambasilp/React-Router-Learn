@@ -10,7 +10,6 @@
     text-transform: capitalize;
     color: white;
     background-color: red ;
-    border-bottom: 10px solid #EEEEEE;
     outline: none;
 }
 
@@ -27,3 +26,4 @@
     color: white;
     font-size: 1.2rem;
 }
+

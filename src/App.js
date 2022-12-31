@@ -9,8 +9,9 @@ import Header from './components/Header';
 import { Notfound } from './Pages/Notfound';
 import { Marks } from './Pages/Marks';
 import { Sports } from './Pages/Sports'
-import './App.css';
 import Login from './Pages/Login';
+import Remarks from './Pages/Remarks';
+import './App.css';
 
 
 const MyUsers = React.lazy(() =>
@@ -32,6 +33,7 @@ function App() {
               <Route path=':userId' element={<Details />}>
                 <Route index element={<Marks />}></Route>
                 <Route path="Sports" element={<Sports />}></Route>
+                <Route path="Remarks" element={<Remarks />}></Route>
               </Route>
             </Route>
             <Route path='Usage' element={<Usage />} />
