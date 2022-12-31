@@ -14,6 +14,7 @@
     border-radius: 10px;
     color: #fff;
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
   }
   .form::before {
     content: "";
@@ -43,10 +44,16 @@
     color: white;
   }
   .form .error{
+    position: absolute;
+    top: 0;
+    left: 0;
     background-color: red;
-    padding:.5rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     transition: ease 0.3s;
     width: 100%;
+    padding: 1rem;
   }
   .form .input-group {
     position: relative;

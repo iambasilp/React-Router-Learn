@@ -21,7 +21,7 @@ export const Users = () => {
   }
 
   return (
-    <div>
+    <div style={{marginTop:"5rem"}}>
       <div className="options">
         <label htmlFor="">
           Select Class
