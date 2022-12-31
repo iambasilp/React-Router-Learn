@@ -9,7 +9,8 @@ import { Details } from './Pages/Details';
 import { Marks } from './Pages/Marks';
 import { Sports } from './Pages/Sports';
 import Notfound from './Pages/NotFound';
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Login from './Pages/Login';
 import './App.css';
 
 const MyUsers = React.lazy(() =>
@@ -22,6 +23,7 @@ function App() {
       <BrowserRouter>
         <Suspense fallback={<Loading/>}>
           <Routes>
+            <Route path='Login' element={<Login/>}/>
             <Route path='/' element={<Header />}>
               <Route index element={<Home />} />
               <Route path='Home' element={<Home />}></Route>

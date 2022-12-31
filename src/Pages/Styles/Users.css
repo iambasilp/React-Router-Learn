@@ -1,7 +1,6 @@
 .users{
     width: 100%;
     display: grid;
-    margin-top: 85px;
 }
 .card{
     background-color:  #E50914;

@@ -1,0 +1,11 @@
+{
+    "basil":{
+        "role":["admin","user"]
+    },
+    "ayas":{
+        "role":["user"]
+    },
+    "basila":{
+        "role":["user"]
+    }
+}

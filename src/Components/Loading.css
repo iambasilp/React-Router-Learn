@@ -23,6 +23,11 @@
 	transform-style:preserve-3d;
 	-webkit-transform-style:preserve-3d;
 }
+@media screen and (max-width:500px) {
+	.loader>span{
+		font-size: 3rem;
+	}
+}
 
 @keyframes flip{
 	35%{
