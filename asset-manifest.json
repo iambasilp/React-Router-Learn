@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/React-Router-Learn/static/css/main.533753b5.css",
-    "main.js": "/React-Router-Learn/static/js/main.9ef5d92e.js",
+    "main.css": "/React-Router-Learn/static/css/main.17d68b9d.css",
+    "main.js": "/React-Router-Learn/static/js/main.56a95a83.js",
     "static/css/664.00bda8bc.chunk.css": "/React-Router-Learn/static/css/664.00bda8bc.chunk.css",
-    "static/js/664.f6212711.chunk.js": "/React-Router-Learn/static/js/664.f6212711.chunk.js",
+    "static/js/664.6f4a5518.chunk.js": "/React-Router-Learn/static/js/664.6f4a5518.chunk.js",
     "Section.js": "/React-Router-Learn/static/js/Section.dd59cfef.chunk.js",
     "static/js/787.8fedd6c6.chunk.js": "/React-Router-Learn/static/js/787.8fedd6c6.chunk.js",
     "index.html": "/React-Router-Learn/index.html",
-    "main.533753b5.css.map": "/React-Router-Learn/static/css/main.533753b5.css.map",
-    "main.9ef5d92e.js.map": "/React-Router-Learn/static/js/main.9ef5d92e.js.map",
+    "main.17d68b9d.css.map": "/React-Router-Learn/static/css/main.17d68b9d.css.map",
+    "main.56a95a83.js.map": "/React-Router-Learn/static/js/main.56a95a83.js.map",
     "664.00bda8bc.chunk.css.map": "/React-Router-Learn/static/css/664.00bda8bc.chunk.css.map",
-    "664.f6212711.chunk.js.map": "/React-Router-Learn/static/js/664.f6212711.chunk.js.map",
+    "664.6f4a5518.chunk.js.map": "/React-Router-Learn/static/js/664.6f4a5518.chunk.js.map",
     "Section.dd59cfef.chunk.js.map": "/React-Router-Learn/static/js/Section.dd59cfef.chunk.js.map",
     "787.8fedd6c6.chunk.js.map": "/React-Router-Learn/static/js/787.8fedd6c6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.533753b5.css",
-    "static/js/main.9ef5d92e.js"
+    "static/css/main.17d68b9d.css",
+    "static/js/main.56a95a83.js"
   ]
 }
