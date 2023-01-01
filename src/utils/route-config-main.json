@@ -2,7 +2,7 @@
     "/Settings":{
         "role":["admin"]
     },
-    "/Users/:serId/Remarks":{
+    "/Users/:userId/Remarks":{
         "role":["admin"]
     }
 }

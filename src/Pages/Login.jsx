@@ -39,7 +39,7 @@ const Login = () => {
             type="password"
             name="loginPassword"
             id="loginPassword"
-            required
+            
           />
           <label htmlFor="loginPassword" >Password</label>
         </div>

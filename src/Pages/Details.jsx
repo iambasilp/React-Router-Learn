@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
+import PrivateLink from "../components/Links/PrivateLink";
 import axios from "axios";
 import {
-  NavLink,
   useParams,
   useNavigate,
   useLocation,
@@ -51,15 +51,15 @@ export const Details = () => {
       </button>
 
       <div className="sub-menu">
-        <NavLink className="menu" to="" end>
+        <PrivateLink className="menu" to="" end>
           Marks
-        </NavLink>
-        <NavLink className="menu" to="Sports">
+        </PrivateLink>
+        <PrivateLink className="menu" to="Sports">
           Sports
-        </NavLink>
-        <NavLink className="menu" to="Remarks">
+        </PrivateLink>
+        <PrivateLink className="menu" to="Remarks">
           Remarks
-        </NavLink>
+        </PrivateLink>
       </div>
       <div className="detail-body">
         <Outlet context={user} />

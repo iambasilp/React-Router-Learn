@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link, useSearchParams, useNavigate } from "react-router-dom";
+import { useSearchParams, useNavigate } from "react-router-dom";
 import axios from "axios";
 import "./Users.css";
 export const Users = () => {
@@ -41,7 +41,7 @@ export const Users = () => {
         if(!cls){
           return true;
         }
-        return cls == item.class
+        return cls === item.class
       }).map((item) => {
         return (
           <div onClick={()=>{

@@ -1,5 +1,5 @@
 import React from 'react'
-import testObj, {testFun} from '../utils/Common'
+import testObj from '../utils/Common'
 const Section = () => {
     console.log(testObj);
   return (

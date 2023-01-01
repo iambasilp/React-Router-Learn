@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink, Outlet } from "react-router-dom";
+import PrivateLink from "./Links/PrivateLink";
 import LogedInOutlet from './Outlets/LogedInOutlet';
 import {clearUserInfo} from '../utils/Common'
 import "./Header.css";
@@ -9,7 +9,7 @@ const Header = () => {
       <header className="header">
         <nav className="nav container">
           <div className="nav__menu">
-            <NavLink
+            <PrivateLink
               to="Home"
               className={(obj) => {
                 const { isActive } = obj;
@@ -17,12 +17,12 @@ const Header = () => {
               }}
             >
               Home
-            </NavLink>
-            <NavLink to="Settings">Settings</NavLink>
-            <NavLink to="Users">Users</NavLink>
-            <NavLink to="Usage">Usage</NavLink>
+            </PrivateLink>
+            <PrivateLink to="Settings">Settings</PrivateLink>
+            <PrivateLink to="Users">Users</PrivateLink>
+            <PrivateLink to="Usage">Usage</PrivateLink>
     
-              <NavLink  className='logout' to="Login" onClick={()=> clearUserInfo() }>Logout</NavLink>
+              <PrivateLink  className='logout' to="Login" onClick={()=> clearUserInfo() }>Logout</PrivateLink>
           </div>
         </nav>
       </header>
