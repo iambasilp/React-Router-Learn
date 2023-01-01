@@ -15,17 +15,13 @@ export const Users = () => {
   const navigate = useNavigate()
   function handleSelectChange(event){
     setSearchParams({
-      class:event.target.value,
-      CreatedBy:"Basil"
+      class:event.target.value
     })
   }
 
   return (
-    <div style={{marginTop:"5rem"}}>
+    <div style={{marginTop:"69px"}}>
       <div className="options">
-        <label htmlFor="">
-          Select Class
-        </label>
         <div>
           <select name="" id="" onChange={handleSelectChange}>
             <option value="5">5</option>
@@ -41,7 +37,7 @@ export const Users = () => {
         if(!cls){
           return true;
         }
-        return cls === item.class
+        return cls == item.class
       }).map((item) => {
         return (
           <div onClick={()=>{

@@ -9,7 +9,8 @@
     position: relative;
     width: 100%;
     max-width: 380px;
-    padding: 80px 40px 40px;
+    margin: 0rem 1rem;
+    padding: 50px 20px 40px;
     background: rgba(0, 0, 0, 0.7);
     border-radius: 10px;
     color: #fff;

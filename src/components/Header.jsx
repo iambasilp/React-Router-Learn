@@ -1,34 +1,80 @@
 import React from "react";
 import PrivateLink from "./Links/PrivateLink";
+import { navToggle } from '../utils/Common'
+import { navClose } from '../utils/Common'
+import { navLink } from '../utils/Common'
+import { Link } from "react-router-dom";
 import LogedInOutlet from './Outlets/LogedInOutlet';
 import {clearUserInfo} from '../utils/Common'
+import 'remixicon/fonts/remixicon.css'
 import "./Header.css";
 const Header = () => {
   return (
     <>
-      <header className="header">
-        <nav className="nav container">
-          <div className="nav__menu">
-            <PrivateLink
-              to="Home"
-              className={(obj) => {
-                const { isActive } = obj;
-                return `hello ${isActive ? "active" : ""}`;
-              }}
-            >
-              Home
-            </PrivateLink>
-            <PrivateLink to="Settings">Settings</PrivateLink>
-            <PrivateLink to="Users">Users</PrivateLink>
-            <PrivateLink to="Usage">Usage</PrivateLink>
-    
-              <PrivateLink  className='logout' to="Login" onClick={()=> clearUserInfo() }>Logout</PrivateLink>
-          </div>
-        </nav>
-      </header>
-      
-      <LogedInOutlet />
-    </>
+    <header className="header" id="header">
+     <nav className="nav container">
+         <Link to="/" className="nav__logo">
+             Basil
+         </Link>
+         <div className="nav__menu" id="nav-menu">
+             <ul className="nav__list">
+                 <li className="nav__item">
+                     <PrivateLink 
+                     onClick={()=>{
+                        navLink()
+                    }}
+                      to="Home"
+                      className={(obj) => {
+                        const { isActive } = obj;
+                        return `nav__link ${isActive ? "active" : ""}`;
+                      }}
+                     >Home</PrivateLink>
+                 </li>
+                 <li className="nav__item">
+                     <PrivateLink to="Settings" className="nav__link" onClick={()=>{
+                            navLink()
+                        }}>Settings</PrivateLink>
+                 </li>
+                 <li className="nav__item">
+                     <PrivateLink to="Users" className="nav__link" onClick={()=>{
+                            navLink()
+                        }}>Users</PrivateLink>
+                 </li>
+                 <li className="nav__item">
+                     <PrivateLink to="Usage" className="nav__link" onClick={()=>{
+                            navLink()
+                        }}>Usage</PrivateLink>
+                 </li>
+                 <li className="nav__item">
+                     <PrivateLink  className='nav__link logout' to="Login" onClick={()=> clearUserInfo() } >Logout</PrivateLink>
+                 </li>
+             </ul>
+
+             
+             <div className="nav__close" id="nav-close"
+             onClick={()=>{
+              navClose()
+          }}
+             >
+                 <i className="ri-close-line"></i>
+             </div>
+         </div>
+         <div className="nav__buttons">
+             
+             {/* <i className="ri-moon-line change-theme" id="theme-button"></i> */}
+             <div className="nav__toggle" id="nav-toggle"
+              onClick={()=>{
+                navToggle()
+            }}
+             >
+                 <i className="ri-menu-fill"></i>
+             </div>
+         </div>
+     </nav>
+ </header> 
+ <LogedInOutlet />
+ </>
+
   );
 };
 

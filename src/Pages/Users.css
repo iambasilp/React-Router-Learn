@@ -24,11 +24,14 @@
 }
 .options{
     background-color: #000080;
-    padding: 2rem 0rem 1rem 2rem;
+    padding: 1rem;
     color: white;
 
 }
 select{
-    padding: .5rem 1.2rem;
+    background-color: white;
+    padding: .5rem 1rem;
     font-size: 1rem;
+    outline: none;
+    border: none;
 }

@@ -63,5 +63,22 @@ const isPathAllowd = (pathname)=>{
   const role = getRolesPath(pathname)
   return isRouteRoleMatch(role)
 }
-export { testFun, saveUsreInfo, clearUserInfo, isLoggedIn,isPathAllowd };
+
+// Header
+// toggle
+var navToggle = () => {
+  const Menu = document.querySelector('#nav-menu')
+  Menu.classList.add('show-menu')
+}
+var navClose = () => {
+  const Menu = document.querySelector('#nav-menu')
+  Menu.classList.remove('show-menu')
+
+}
+var navLink = () => {
+  const Menu = document.querySelector('#nav-menu')
+  Menu.classList.remove('show-menu')
+}
+// Header end
+export { testFun, saveUsreInfo, clearUserInfo, isLoggedIn,isPathAllowd,navClose, navToggle,navLink };
 export default testObj;
