@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/React-Router-Learn/static/css/main.4f4e8d9e.css",
-    "main.js": "/React-Router-Learn/static/js/main.59c20bb5.js",
-    "static/css/664.568f20e3.chunk.css": "/React-Router-Learn/static/css/664.568f20e3.chunk.css",
-    "static/js/664.66c38d15.chunk.js": "/React-Router-Learn/static/js/664.66c38d15.chunk.js",
+    "main.js": "/React-Router-Learn/static/js/main.138cfacf.js",
+    "static/css/664.710d08f9.chunk.css": "/React-Router-Learn/static/css/664.710d08f9.chunk.css",
+    "static/js/664.25dbb2ae.chunk.js": "/React-Router-Learn/static/js/664.25dbb2ae.chunk.js",
     "Section.js": "/React-Router-Learn/static/js/Section.9d9311eb.chunk.js",
     "static/js/787.8fedd6c6.chunk.js": "/React-Router-Learn/static/js/787.8fedd6c6.chunk.js",
     "static/media/remixicon.svg?t=1590207869815": "/React-Router-Learn/static/media/remixicon.9cedd2150922ead84869.svg",
@@ -13,14 +13,14 @@
     "static/media/remixicon.woff2?t=1590207869815": "/React-Router-Learn/static/media/remixicon.90668f6f9b3c2c18a090.woff2",
     "index.html": "/React-Router-Learn/index.html",
     "main.4f4e8d9e.css.map": "/React-Router-Learn/static/css/main.4f4e8d9e.css.map",
-    "main.59c20bb5.js.map": "/React-Router-Learn/static/js/main.59c20bb5.js.map",
-    "664.568f20e3.chunk.css.map": "/React-Router-Learn/static/css/664.568f20e3.chunk.css.map",
-    "664.66c38d15.chunk.js.map": "/React-Router-Learn/static/js/664.66c38d15.chunk.js.map",
+    "main.138cfacf.js.map": "/React-Router-Learn/static/js/main.138cfacf.js.map",
+    "664.710d08f9.chunk.css.map": "/React-Router-Learn/static/css/664.710d08f9.chunk.css.map",
+    "664.25dbb2ae.chunk.js.map": "/React-Router-Learn/static/js/664.25dbb2ae.chunk.js.map",
     "Section.9d9311eb.chunk.js.map": "/React-Router-Learn/static/js/Section.9d9311eb.chunk.js.map",
     "787.8fedd6c6.chunk.js.map": "/React-Router-Learn/static/js/787.8fedd6c6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4f4e8d9e.css",
-    "static/js/main.59c20bb5.js"
+    "static/js/main.138cfacf.js"
   ]
 }
