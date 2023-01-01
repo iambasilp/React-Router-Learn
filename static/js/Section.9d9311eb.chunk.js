@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkreact_router=self.webpackChunkreact_router||[]).push([[469],{277:function(e,r,t){t.r(r);t(791);var o=t(863),n=t(184);r.default=function(){return console.log(o.ZP),(0,n.jsx)("div",{children:(0,n.jsx)("h1",{style:{backgroundColor:"blue",color:"white",padding:"3rem",marginBottom:"2rem",textTransform:"capitalize"},children:"This is Dynamically Imported Section "})})}}}]);
+//# sourceMappingURL=Section.9d9311eb.chunk.js.map
