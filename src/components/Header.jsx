@@ -30,11 +30,11 @@ const Header = () => {
                       }}
                      >Home</PrivateLink>
                  </li>
-                 <li className="nav__item">
-                     <PrivateLink to="Settings" className="nav__link" onClick={()=>{
+                
+                     <PrivateLink to="Settings" className="nav__item nav__link" onClick={()=>{
                             navLink()
                         }}>Settings</PrivateLink>
-                 </li>
+                
                  <li className="nav__item">
                      <PrivateLink to="Users" className="nav__link" onClick={()=>{
                             navLink()
